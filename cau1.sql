@@ -3,9 +3,8 @@ USE RikkeiClinicDB;
 
 CREATE TABLE Patients (
     patient_id INT PRIMARY KEY,
-    full_name VARCHAR(100) NOT NULL,
-    phone VARCHAR(15) UNIQUE NOT NULL,
-    date_of_birth DATE
+    patient_type varchar(20),
+	total_cost decimal(18, 2)
 );
 
 CREATE TABLE Appointments (
